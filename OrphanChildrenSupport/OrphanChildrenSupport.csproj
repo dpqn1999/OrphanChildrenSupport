@@ -70,6 +70,7 @@
   <ItemGroup>
     <ProjectReference Include="..\OrphanChildrenSupport.Common\OrphanChildrenSupport.Common.csproj" />
     <ProjectReference Include="..\OrphanChildrenSupport.IoC.Configuration\OrphanChildrenSupport.IoC.Configuration.csproj" />
+    <ProjectReference Include="..\OrphanChildrenSupport.Services.Contracts\OrphanChildrenSupport.Services.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>

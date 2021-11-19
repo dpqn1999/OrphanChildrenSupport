@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OrphanChildrenSupport.HttpClientFactory.Libraries;
 using OrphanChildrenSupport.Infrastructure.Data;
+using OrphanChildrenSupport.Services.Contracts;
+using OrphanChildrenSupport.Servicess;
 using OrphanChildrenSupport.Tools;
 using OrphanChildrenSupport.Tools.Encryptions;
 using OrphanChildrenSupport.Tools.HttpContextExtensions;
@@ -21,7 +23,7 @@ namespace OrphanChildrenSupport.IoC.Configuration.DI
         {
             if (services != null)
             {
-                
+                services.AddTransient<IPersonalProfileService, PersonalProfileService>();
             }
         }
 
@@ -83,19 +85,6 @@ namespace OrphanChildrenSupport.IoC.Configuration.DI
             }
         }
 
-        public static void ConfigureHttpClientFactory(this IServiceCollection services, IConfiguration configuration)
-        {
-            if (services != null)
-            {
-                services.AddHttpClient<LibraryService>(c =>
-                {
-                    c.BaseAddress = new Uri(configuration.GetValue<string>("LibraryApi:Url"));
-                    c.DefaultRequestHeaders.Add("ApiKey", configuration.GetValue<string>("LibraryApi:ApiKey"));
-                    c.DefaultRequestHeaders.Add("ClientId", configuration.GetValue<string>("LibraryApi:ClientId"));
-                });
-            }
-        }
-
         public static void ConfigureDbContexts(this IServiceCollection services, IConfiguration configuration)
         {
             if (services != null)
@@ -103,7 +92,7 @@ namespace OrphanChildrenSupport.IoC.Configuration.DI
                 //DbContext settings
                 services.AddControllersWithViews();
                 services.AddDbContext<OrphanChildrenSupportDbContext>(options =>
-                       options.UseSqlServer(configuration.GetConnectionString("WorkFlowConnection")), ServiceLifetime.Transient);
+                       options.UseSqlServer(configuration.GetConnectionString("OrphanChildrenSupportConnection")), ServiceLifetime.Transient);
 
                 //services.AddIdentity<IdentityUser, IdentityRole>(options =>
                 //{
@@ -113,7 +102,7 @@ namespace OrphanChildrenSupport.IoC.Configuration.DI
                 //    options.Password.RequireNonAlphanumeric = false;
                 //    options.Password.RequireDigit = false;
                 //})
-                //.AddUserStore<WorkFlowDbContext>()
+                //.AddUserStore<OrphanChildrenSupportDbContext>()
                 //.AddDefaultTokenProviders();
             }
         }

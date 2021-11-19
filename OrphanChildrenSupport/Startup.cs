@@ -155,7 +155,7 @@ namespace OrphanChildrenSupport
                     services.ConfigureBusinessServices(Configuration);
 
                     //HttpClient Factory setting
-                    services.ConfigureHttpClientFactory(Configuration);
+                    //services.ConfigureHttpClientFactory(Configuration);
 
                     //Helpers settings
                     services.ConfigureHelperServices(Configuration);

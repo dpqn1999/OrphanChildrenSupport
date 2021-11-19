@@ -15,13 +15,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Common", "0.Common", "{9F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrphanChildrenSupport.Common", "OrphanChildrenSupport.Common\OrphanChildrenSupport.Common.csproj", "{8EE8CF94-5208-4B42-8D63-1154A8E32125}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrphanChildrenSupport.HttpClientFactory", "OrphanChildrenSupport.HttpClientFactory\OrphanChildrenSupport.HttpClientFactory.csproj", "{17DAF105-2522-4DA3-A5B9-9AA905D75878}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrphanChildrenSupport.HttpClientFactory", "OrphanChildrenSupport.HttpClientFactory\OrphanChildrenSupport.HttpClientFactory.csproj", "{17DAF105-2522-4DA3-A5B9-9AA905D75878}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrphanChildrenSupport.IoC.Configuration", "OrphanChildrenSupport.IoC.Configuration\OrphanChildrenSupport.IoC.Configuration.csproj", "{63093691-7035-4F8D-A59A-A5297688D088}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrphanChildrenSupport.IoC.Configuration", "OrphanChildrenSupport.IoC.Configuration\OrphanChildrenSupport.IoC.Configuration.csproj", "{63093691-7035-4F8D-A59A-A5297688D088}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrphanChildrenSupport.Tools", "OrphanChildrenSupport.Tools\OrphanChildrenSupport.Tools.csproj", "{945BA7E6-EEE9-4B3F-B435-A0AEB47F1C94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrphanChildrenSupport.Tools", "OrphanChildrenSupport.Tools\OrphanChildrenSupport.Tools.csproj", "{945BA7E6-EEE9-4B3F-B435-A0AEB47F1C94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrphanChildrenSupport.Infrastructure.Data", "OrphanChildrenSupport.Infrastructure.Data\OrphanChildrenSupport.Infrastructure.Data.csproj", "{048FC2E2-D6C0-4408-B5D7-6D86D3D4D5EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrphanChildrenSupport.Infrastructure.Data", "OrphanChildrenSupport.Infrastructure.Data\OrphanChildrenSupport.Infrastructure.Data.csproj", "{048FC2E2-D6C0-4408-B5D7-6D86D3D4D5EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrphanChildrenSupport.Services", "OrphanChildrenSupport.Services\OrphanChildrenSupport.Services.csproj", "{F41C86FB-B667-494F-87B1-1F4FFF22BA26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrphanChildrenSupport.Services.Models", "OrphanChildrenSupport.Services.Models\OrphanChildrenSupport.Services.Models.csproj", "{C7073D79-2FF1-44A1-AE43-712776CF73FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrphanChildrenSupport.Services.Contracts", "OrphanChildrenSupport.Services.Contracts\OrphanChildrenSupport.Services.Contracts.csproj", "{4D04993F-0AFB-445B-BA53-42BA5631A943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrphanChildrenSupport.DataContracts", "OrphanChildrenSupport.DataContracts\OrphanChildrenSupport.DataContracts.csproj", "{9C5FEFB9-D57B-4EF4-9C71-2B3B29C06D8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrphanChildrenSupport.Infrastructure.Repositories", "OrphanChildrenSupport.Infrastructure.Repositories\OrphanChildrenSupport.Infrastructure.Repositories.csproj", "{F61BD68E-51C1-4136-A146-3E315E83C2BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +63,26 @@ Global
 		{048FC2E2-D6C0-4408-B5D7-6D86D3D4D5EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{048FC2E2-D6C0-4408-B5D7-6D86D3D4D5EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{048FC2E2-D6C0-4408-B5D7-6D86D3D4D5EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F41C86FB-B667-494F-87B1-1F4FFF22BA26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41C86FB-B667-494F-87B1-1F4FFF22BA26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41C86FB-B667-494F-87B1-1F4FFF22BA26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41C86FB-B667-494F-87B1-1F4FFF22BA26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7073D79-2FF1-44A1-AE43-712776CF73FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7073D79-2FF1-44A1-AE43-712776CF73FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7073D79-2FF1-44A1-AE43-712776CF73FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7073D79-2FF1-44A1-AE43-712776CF73FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D04993F-0AFB-445B-BA53-42BA5631A943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D04993F-0AFB-445B-BA53-42BA5631A943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D04993F-0AFB-445B-BA53-42BA5631A943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D04993F-0AFB-445B-BA53-42BA5631A943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C5FEFB9-D57B-4EF4-9C71-2B3B29C06D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C5FEFB9-D57B-4EF4-9C71-2B3B29C06D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C5FEFB9-D57B-4EF4-9C71-2B3B29C06D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C5FEFB9-D57B-4EF4-9C71-2B3B29C06D8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F61BD68E-51C1-4136-A146-3E315E83C2BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61BD68E-51C1-4136-A146-3E315E83C2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61BD68E-51C1-4136-A146-3E315E83C2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61BD68E-51C1-4136-A146-3E315E83C2BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +94,11 @@ Global
 		{63093691-7035-4F8D-A59A-A5297688D088} = {9F178780-2A8A-489C-A9C2-34A8E9A7262E}
 		{945BA7E6-EEE9-4B3F-B435-A0AEB47F1C94} = {9F178780-2A8A-489C-A9C2-34A8E9A7262E}
 		{048FC2E2-D6C0-4408-B5D7-6D86D3D4D5EF} = {88967CF2-F28A-48A3-BE82-FA86EAF7B03B}
+		{F41C86FB-B667-494F-87B1-1F4FFF22BA26} = {FA4FA740-FA6B-44F9-801B-E54F58A27389}
+		{C7073D79-2FF1-44A1-AE43-712776CF73FA} = {FA4FA740-FA6B-44F9-801B-E54F58A27389}
+		{4D04993F-0AFB-445B-BA53-42BA5631A943} = {FA4FA740-FA6B-44F9-801B-E54F58A27389}
+		{9C5FEFB9-D57B-4EF4-9C71-2B3B29C06D8F} = {FD8B5594-3DDA-4944-8888-B0005B0810DD}
+		{F61BD68E-51C1-4136-A146-3E315E83C2BB} = {88967CF2-F28A-48A3-BE82-FA86EAF7B03B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {780AEDA5-342A-40C6-A47C-5DBE9D22E4A0}

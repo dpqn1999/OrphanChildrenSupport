@@ -9,16 +9,18 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.WsFederation" Version="5.0.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OrphanChildrenSupport.DataContracts\OrphanChildrenSupport.DataContracts.csproj" />
     <ProjectReference Include="..\OrphanChildrenSupport.HttpClientFactory\OrphanChildrenSupport.HttpClientFactory.csproj" />
     <ProjectReference Include="..\OrphanChildrenSupport.Infrastructure.Data\OrphanChildrenSupport.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\OrphanChildrenSupport.Services.Contracts\OrphanChildrenSupport.Services.Contracts.csproj" />
+    <ProjectReference Include="..\OrphanChildrenSupport.Services.Models\OrphanChildrenSupport.Services.Models.csproj" />
+    <ProjectReference Include="..\OrphanChildrenSupport.Services\OrphanChildrenSupport.Services.csproj" />
     <ProjectReference Include="..\OrphanChildrenSupport.Tools\OrphanChildrenSupport.Tools.csproj" />
   </ItemGroup>
 
